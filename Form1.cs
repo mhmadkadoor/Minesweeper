@@ -159,7 +159,7 @@ namespace Minesweeper
             if (clickedButton != null)
             {   
                 clickedButton.BackgroundImage = null; // Clear any existing background image
-                if (Control.ModifierKeys == Keys.Control) // Check if right-click (Ctrl key used as a substitute for right-click)
+                if (Control.ModifierKeys == Keys.Control) 
                 {
                     if (clickedButton.BackgroundImage == null)
                     {
@@ -170,7 +170,7 @@ namespace Minesweeper
                     {
                         clickedButton.BackgroundImage = null; // Remove flag image
                     }
-                    return; // Exit without processing further
+                    return;
                 }
 
                 clickedButton.Enabled = false;
@@ -210,6 +210,7 @@ namespace Minesweeper
                         winGame();
                     }
                 }
+                
             }
         }
 
